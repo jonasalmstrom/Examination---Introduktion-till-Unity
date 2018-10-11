@@ -16,11 +16,11 @@ public class AsteroidScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //gör så att asteroiden rör sig framåt konstant
         transform.Translate(0, -astSpeed * Time.deltaTime, 0, Space.World);
-
+        //gör så att asteroiden roterar konstant
         transform.Rotate(0, 0, -astRotate * Time.deltaTime);
-
+        //kör funktionen Warp
         Warp();
     }
 
